@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    title Material Components for the web
+    link(rel='stylesheet' href='/../node_modules/material-components-web/dist/material-components-web.css')
+  body
+    block content
+    h2.mdc-typography--display2 Hello, Material Components!
+      .mdc-text-field(data-mdc-auto-init='MDCTextField')
+      input#demo-input.mdc-text-field__input(type='text')
+    label.mdc-floating-label(for='demo-input') Tell us how you feel!
+        script(src='/../node_modules/material-components-web/dist/material-components-web.js')
+          script.
+            mdc.autoInit()
